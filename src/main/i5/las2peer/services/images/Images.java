@@ -82,7 +82,52 @@ public class Images extends RESTService {
 
     private final Images service = (Images) Context.getCurrent().getService();
 
-    
+      /**
+   * 
+   * getImage
+   *
+   * 
+   *
+   * 
+   * @return Response 
+   * 
+   */
+  @GET
+  @Path("/")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.TEXT_PLAIN)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "images")
+  })
+  @ApiOperation(value = "getImage", notes = " ")
+  public Response getImage() {
+
+
+
+
+
+     
+    // service method invocations
+
+     
+
+
+
+
+
+    // images
+    boolean images_condition = true;
+    if(images_condition) {
+      JSONObject imagesResult = new JSONObject();
+
+      
+
+      return Response.status(HttpURLConnection.HTTP_OK).entity(imagesResult.toJSONString()).build();
+    }
+    return null;
+  }
+
+
 
   }
 
