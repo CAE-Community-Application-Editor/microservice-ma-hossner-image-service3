@@ -71,9 +71,9 @@ public class Images extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "ma-hossner-image-service3", version = "$Metadata_Version$",
-          description = "$Metadata_Description$",
-          termsOfService = "$Metadata_Terms$",
+      info = @Info(title = "ma-hossner-image-service3", version = "1",
+          description = "Simple image hosting service.",
+          termsOfService = "",
           contact = @Contact(name = "Philipp Hossner", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
               url = "https://github.com/CAE-Community-Application-Editor/microservice-ma-hossner-image-service3/blob/master/LICENSE.txt") ) )
