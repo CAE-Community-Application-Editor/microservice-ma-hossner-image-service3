@@ -71,8 +71,8 @@ public class Images extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "ma-hossner-image-service3", version = "1",
-          description = "Simple image hosting service.",
+      info = @Info(title = "ma-hossner-image-service3", version = "",
+          description = "",
           termsOfService = "",
           contact = @Contact(name = "Philipp Hossner", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
@@ -82,50 +82,7 @@ public class Images extends RESTService {
 
     private final Images service = (Images) Context.getCurrent().getService();
 
-      /**
-   * 
-   * getImages
-   *
-   * 
-   *
-   * 
-   * @return Response 
-   * 
-   */
-  @GET
-  @Path("/")
-  @Produces(MediaType.APPLICATION_JSON)
-  @Consumes(MediaType.TEXT_PLAIN)
-  @ApiResponses(value = {
-       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "images")
-  })
-  @ApiOperation(value = "getImages", notes = " ")
-  public Response getImages() {
-
-
-
-
-
-    // service method invocations
-
-
-
-
-
-
-    // images
-    boolean images_condition = true;
-    if(images_condition) {
-      JSONObject imagesResult = new JSONObject();
-
-      
-
-      return Response.status(HttpURLConnection.HTTP_OK).entity(imagesResult.toJSONString()).build();
-    }
-    return null;
-  }
-
-
+    
 
   }
 
